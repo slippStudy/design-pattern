@@ -1,0 +1,14 @@
+rootProject.name = 'design-pattern'
+
+// 공통 모듈
+include 'common'
+
+// 도메인 모듈
+include 'domain-mysql'
+
+// 내부 모듈
+include 'adapter'
+
+// 어플리케이션 모듈
+include 'app-api'
+

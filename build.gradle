@@ -1,0 +1,55 @@
+plugins {
+    id 'org.springframework.boot' version '2.2.6.RELEASE' apply false
+    id 'io.spring.dependency-management' version '1.0.9.RELEASE' apply false
+}
+
+ext {
+    set('modelMapperVersion', "2.3.7")
+    set('springCloudVersion', "Hoxton.SR4")
+    set('swaggerVersion', "2.9.2")
+    set('swaggerModuleVersion', "1.5.24")
+}
+
+allprojects {
+    group = 'net.slipp.design.pattern'
+    version = '0.1-SNAPSHOT'
+}
+
+subprojects {
+    apply plugin: 'java'
+    apply plugin: 'org.springframework.boot'
+    apply plugin: 'io.spring.dependency-management'
+
+    repositories {
+        jcenter()
+    }
+
+    configurations {
+        compileOnly {
+            extendsFrom annotationProcessor
+        }
+    }
+
+    java {
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
+    }
+
+    dependencies {
+        // Lombok
+        compileOnly('org.projectlombok:lombok')
+        annotationProcessor('org.projectlombok:lombok')
+        testCompileOnly('org.projectlombok:lombok')
+        testAnnotationProcessor('org.projectlombok:lombok')
+    }
+
+    dependencyManagement {
+        imports {
+            mavenBom("org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}")
+        }
+    }
+
+    test {
+        useJUnitPlatform()
+    }
+}
