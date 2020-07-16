@@ -1,0 +1,26 @@
+dependencies {
+
+    // Project Modules
+    compile(project(":common"))
+
+    // Spring Boot
+    implementation("org.springframework.boot:spring-boot-autoconfigure")
+
+    // Spring Framework
+    implementation("org.springframework:spring-beans")
+    implementation("org.springframework:spring-context")
+    implementation("org.springframework:spring-web")
+
+    // Jackson
+    implementation("com.fasterxml.jackson.core:jackson-annotations")
+    implementation("com.fasterxml.jackson.core:jackson-databind")
+
+    // Swagger
+    implementation("io.swagger:swagger-annotations:${swaggerModuleVersion}")
+
+    // Validation API
+    implementation("jakarta.validation:jakarta.validation-api")
+}
+
+jar.enabled = true
+bootJar.enabled = false

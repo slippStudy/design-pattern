@@ -1,0 +1,24 @@
+dependencies {
+
+    // Project Modules
+    implementation(project(':common'))
+    implementation(project(":adapter"))
+    implementation(project(':domain-mysql'))
+
+    // Spring Boot
+    implementation('org.springframework.boot:spring-boot-starter-actuator')
+    implementation('org.springframework.boot:spring-boot-starter-web')
+    testImplementation('org.springframework.boot:spring-boot-starter-test') {
+        exclude group: 'org.junit.vintage', module: 'junit-vintage-engine'
+    }
+
+    // Swagger
+    implementation("io.springfox:springfox-swagger2:${swaggerVersion}")
+    implementation("io.springfox:springfox-swagger-ui:${swaggerVersion}")
+    implementation("io.swagger:swagger-annotations:${swaggerModuleVersion}")
+    implementation("io.swagger:swagger-models:${swaggerModuleVersion}")
+
+    // Third party library
+    implementation("org.apache.commons:commons-lang3")
+    implementation("org.modelmapper:modelmapper:${modelMapperVersion}")
+}
