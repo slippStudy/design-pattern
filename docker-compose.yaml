@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  mysql_db:
+    image: mysql:8.0
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    environment:
+      MYSQL_DATABASE: slipp
+      MYSQL_USER: slipp
+      MYSQL_PASSWORD: slipp
+      MYSQL_ROOT_PASSWORD: slippRoot
+    ports:
+      - 3306:3306
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+volumes:
+  mysql_data:
