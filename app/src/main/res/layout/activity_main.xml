@@ -12,7 +12,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Command / Active Object Pattern"
+            android:text="Design Pattern"
             android:textSize="50dp"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -40,6 +40,42 @@
             android:text="정지"
             app:layout_constraintTop_toBottomOf="@id/buttonStart"
             />
+
+        <LinearLayout
+            app:layout_constraintTop_toBottomOf="@id/buttonStop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonPlus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/buttonMinus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/buttonTimes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/buttonDiv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:layout_weight="1" />
+
+        </LinearLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
