@@ -1,0 +1,12 @@
+#############################
+## 커멘드 패턴
+#############################
+
+### 증가
+GET http://localhost:5000/command/increase
+
+### 감소
+GET http://localhost:5000/command/decrease
+
+### 랜덤
+GET http://localhost:5000/command/random

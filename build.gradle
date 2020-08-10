@@ -1,11 +1,11 @@
 plugins {
-    id 'org.springframework.boot' version '2.2.6.RELEASE' apply false
+    id 'org.springframework.boot' version '2.2.9.RELEASE' apply false
     id 'io.spring.dependency-management' version '1.0.9.RELEASE' apply false
 }
 
 ext {
     set('modelMapperVersion', "2.3.7")
-    set('springCloudVersion', "Hoxton.SR4")
+    set('springCloudVersion', "Hoxton.SR6")
     set('swaggerVersion', "2.9.2")
     set('swaggerModuleVersion', "1.5.24")
 }
