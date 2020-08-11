@@ -1,0 +1,18 @@
+#############################
+## 전략 패턴
+#############################
+
+###
+GET http://localhost:5000/strategy/increase/one
+
+###
+GET http://localhost:5000/strategy/increase/random
+
+###
+GET http://localhost:5000/strategy/decrease/one
+
+###
+GET http://localhost:5000/strategy/decrease/random
+
+###
+GET http://localhost:5000/strategy/random
