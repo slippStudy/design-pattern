@@ -1,4 +1,4 @@
-package net.slipp.design.pattern.controller;
+package net.slipp.design.pattern.api.controller;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -14,7 +14,7 @@ import java.util.Random;
 
 @RestController
 @RequestMapping("/template-method")
-@Api(tags = "템플릿 메소드 컨트롤러")
+@Api(tags = "TemplateMethod")
 public class TemplateMethodController {
 
     private final AbstractClass redClass;

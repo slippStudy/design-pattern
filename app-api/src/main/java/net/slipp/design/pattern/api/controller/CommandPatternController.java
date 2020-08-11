@@ -1,4 +1,4 @@
-package net.slipp.design.pattern.controller;
+package net.slipp.design.pattern.api.controller;
 
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
@@ -13,7 +13,7 @@ import java.util.Random;
 @RequiredArgsConstructor
 @RestController
 @RequestMapping("/command")
-@Api(tags = "커멘드패턴")
+@Api(tags = "Command")
 public class CommandPatternController {
 
     private final Receiver countReceiver;

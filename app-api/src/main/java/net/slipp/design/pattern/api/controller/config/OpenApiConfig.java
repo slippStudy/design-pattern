@@ -1,7 +1,6 @@
-package net.slipp.design.pattern.config;
+package net.slipp.design.pattern.api.controller.config;
 
 import com.google.common.collect.Sets;
-import java.util.Collections;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -11,6 +10,8 @@ import springfox.documentation.service.ApiInfo;
 import springfox.documentation.service.Contact;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
+
+import java.util.Collections;
 
 @Slf4j
 @Configuration
