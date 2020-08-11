@@ -25,7 +25,7 @@ public class OpenApiConfig {
             .apis(RequestHandlerSelectors.basePackage("net.slipp.design.pattern"))
             .build();
 
-    docket.produces(Sets.newHashSet(MediaType.APPLICATION_JSON_VALUE));
+    docket.produces(Sets.newHashSet(MediaType.TEXT_PLAIN_VALUE));
     docket.useDefaultResponseMessages(false);
     docket.apiInfo(apiInfo());
 

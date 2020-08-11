@@ -17,3 +17,6 @@
 # Docker Compose를 활용한 로컬 개발환경 구성
 - 개발에 필요한 다양한 인프라를 Docker를 이용하여 설정함
 - Docker Compose 설정을 통해서 간단하게 환경을 구축할 수 있도록 함
+
+# Swagger를 이용하여 API 스펙 제공 및 실행
+- http://localhost:5000/swagger-ui.html
