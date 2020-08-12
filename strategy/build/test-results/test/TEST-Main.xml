@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Main" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-08-12T08:20:00" hostname="gimjeong-gyuui-MacBookPro.local" time="0.014">
+  <properties/>
+  <testcase name="전략패턴테스트" classname="Main" time="0.014"/>
+  <system-out><![CDATA[300.0
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

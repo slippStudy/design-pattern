@@ -14,6 +14,5 @@ public class CeilingFanLowCommand implements Command {
         prevSpeed = ceilingFan.speed;
         ceilingFan.low();
         System.out.println("실행시 Fan 의 속도는 ?" + ceilingFan.speed);
-
     }
 }

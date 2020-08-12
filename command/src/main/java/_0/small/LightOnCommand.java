@@ -1,6 +1,6 @@
 package _0.small;
 
-public class LightOnCommand implements Command{
+public class LightOnCommand implements Command {
 
     Light light;
 
