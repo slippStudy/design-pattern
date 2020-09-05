@@ -2,6 +2,7 @@ import org.junit.Test;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.Objects;
 
 public class Main {
 
@@ -24,6 +25,8 @@ public class Main {
 
         Money 남은돈 = discountPolicy.calculateFee(xmanScreen, 5, money);
         System.out.println(남은돈.amount());
+        Objects.requireNonNullElse(false, true);
+        Boolean a = null;
 
     }
 }

@@ -22,7 +22,6 @@ public class SingletonStatic {
         for (int i = 0; i < 100; i++) {
             service.execute(() -> {
                 SingletonStatic singleton = SingletonStatic.getInstance();
-
             });
         }
         service.shutdown();

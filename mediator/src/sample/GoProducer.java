@@ -12,6 +12,7 @@ public class GoProducer implements Producer {
     @Override
     public void setMediator(Mediator mediator) {
         Objects.requireNonNull(mediator, "Mediator is Null");
+
         this.mediator = mediator;
     }
 

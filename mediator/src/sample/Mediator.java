@@ -16,4 +16,7 @@ public class Mediator {
             consumer.receiveEvent(from, event);
     }
 
+    public void unRegisterEvent(Consumer logConsumer) {
+        consumers.remove(logConsumer);
+    }
 }

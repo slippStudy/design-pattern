@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Main" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-08-12T08:20:39" hostname="gimjeong-gyuui-MacBookPro.local" time="0.01">
+<testsuite name="Main" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-08-12T12:51:11" hostname="gimjeong-gyuui-MacBookPro.local" time="0.012">
   <properties/>
-  <testcase name="templatePattern" classname="Main" time="0.01"/>
+  <testcase name="templatePattern" classname="Main" time="0.012"/>
   <system-out><![CDATA[300.0
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
