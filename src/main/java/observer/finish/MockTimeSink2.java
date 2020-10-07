@@ -1,6 +1,6 @@
 package observer.finish;
 
-public class MockTimeSink implements Observer {
+public class MockTimeSink2 implements Observer {
     private int hours;
     private int minutes;
     private int seconds;
@@ -22,7 +22,7 @@ public class MockTimeSink implements Observer {
         this.minutes = source.getMinutes();
         this.seconds = source.getSeconds();
         System.out.printf(
-                "Hours : %d, Minutes : %d, Seconds : %d\n",
+                "** Hours : %d, Minutes : %d, Seconds : %d **\n",
                 this.hours,
                 this.minutes,
                 this.seconds);

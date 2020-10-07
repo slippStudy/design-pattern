@@ -1,7 +1,5 @@
 package composite;
 
-import com.sun.org.apache.bcel.internal.generic.MONITORENTER;
-
 public class Client {
     public static void main(String[] args) {
         Keyboard keyboard = new Keyboard(5, 2);

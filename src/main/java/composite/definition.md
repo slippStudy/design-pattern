@@ -6,7 +6,7 @@
 
 ## 구성요소
 - Component : 구체적인 부분, 즉 Leaf 클래스와 전체에 해당하는 Compoite 클래스에 공통 인터페이스를 정의
-- Leaf : 구체적인 부분 클래스, Compoite 객체의 부품으로 설정
+- Leaf : 구체적인 부분 클래스, Composite 객체의 부품으로 설정
 - Composite : 전체 클래스, 복수개의 컴포넌트를 갖도록 정의하며 복수개의 Leaf, 복수개의 Compoite 객체를 부분으로 가질 수 있음.
 
 

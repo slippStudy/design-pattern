@@ -9,7 +9,7 @@ public class MockTimeSource extends Subject implements TimeSource {
         this.hours = hours;
         this.minutes = minutes;
         this.seconds = seconds;
-        notifyObserver();
+        notifyObserver(this);
     }
 
     @Override
