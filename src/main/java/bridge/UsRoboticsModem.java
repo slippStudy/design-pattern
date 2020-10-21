@@ -1,6 +1,8 @@
-package adapter;
+package bridge;
 
-public class UsRoboticsModem implements Modem {
+import bridge.Modem;
+
+public class UsRoboticsModem implements ModemImplementation {
     @Override
     public void dial(char[] a) {
         System.out.println("US Robotics dial");

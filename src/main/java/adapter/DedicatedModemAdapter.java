@@ -1,11 +1,16 @@
 package adapter;
 
+import bridge.Modem;
+
 public class DedicatedModemAdapter implements Modem {
-    DedicatedModem dedicatedModem;
+    private DedicatedModem dedicatedModem;
+
+    public DedicatedModemAdapter(DedicatedModem delegateModem) {
+        this.dedicatedModem = delegateModem;
+    }
 
     @Override
     public void dial(char[] a) {
-
     }
 
     @Override

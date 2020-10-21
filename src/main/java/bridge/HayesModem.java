@@ -1,6 +1,6 @@
-package adapter;
+package bridge;
 
-public class HayesModem implements Modem {
+public class HayesModem implements ModemImplementation {
     @Override
     public void dial(char[] a) {
         System.out.println("hayes modem dial");

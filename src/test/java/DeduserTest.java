@@ -1,10 +1,13 @@
-import adapter.Deduser;
+import adapter.DedicatedModem;
+import adapter.DedicatedModemAdapter;
 import org.junit.jupiter.api.Test;
 
 class DeduserTest {
     @Test
-    public void messageProcess() {
-        new Deduser().messageProcess();
+    public void test() {
+        new DedicatedModemAdapter(new DedicatedModem()).send();
+
+
     }
 
 

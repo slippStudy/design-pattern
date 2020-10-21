@@ -1,4 +1,4 @@
-package adapter;
+package bridge;
 
 public interface Modem {
     void dial(char[] a);
